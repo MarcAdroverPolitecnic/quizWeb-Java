@@ -27,7 +27,7 @@
     </form>
 </div>
 <div class="login-box">
-    <p>No tens usuari? Registra't</p>
+    <p>You dont have a user?</p>
 
     <form action="signin" method="get">
         <button class="btn" type="submit">Sign in</button>

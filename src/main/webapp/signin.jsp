@@ -20,7 +20,7 @@
         <input type="password" name="password" placeholder="Password" required>
     </div>
 
-    <button class="btn" type="submit">Registrarse</button>
+    <button class="btn" type="submit">sign in</button>
 </form>
 </div>
 
