@@ -17,7 +17,7 @@ public class SignInServlet extends HttpServlet {
     private final UserService service = new UserService();
 
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         resp.sendRedirect(req.getContextPath() + "/signin.jsp");
     }
 
