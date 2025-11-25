@@ -21,6 +21,7 @@ public class QuestionApiService {
 
     public QuestionApiService() {}
 
+    //Mètode que agafa les preguntes de la API depenent de la dificultat
     public List<Question> fetchQuestionByDifficulty(Difficulty difficulty) throws IOException, InterruptedException {
         URI uri = URI.create(LIST_ENDPOINT + difficulty.getValue());
 

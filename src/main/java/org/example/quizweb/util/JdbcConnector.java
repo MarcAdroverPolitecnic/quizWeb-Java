@@ -5,6 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class JdbcConnector {
+    //Connector amb la base de dades
     public static String url = "jdbc:mysql://db:3306/quiz";
     public static String user = "root";
     public static String password = "root";

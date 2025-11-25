@@ -5,6 +5,7 @@ import java.security.NoSuchAlgorithmException;
 
 public class Hasher {
 
+    //Classe per encriptar les contrasenyes
     public static String hash(String input, String algorithm) {
         try {
             MessageDigest md = MessageDigest.getInstance(algorithm);

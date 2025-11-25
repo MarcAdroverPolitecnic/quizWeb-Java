@@ -24,6 +24,7 @@ public class GameDao {
         }
     }
 
+    //Guarda la partida a la base de dades
     public boolean addGame(Game game) {
         String sql = "INSERT INTO game (user_id, correct_answers, incorrect_answers, total_game_time) VALUES (?, ?, ?, ?)";
         try (PreparedStatement pst = connection.prepareStatement(sql)) {
@@ -42,6 +43,7 @@ public class GameDao {
         }
     }
 
+    //Mètode per mostrar les partides al menú
     public List<UserDto> findAllBestGames(){
         List<UserDto> bestGames = new ArrayList<>();
 

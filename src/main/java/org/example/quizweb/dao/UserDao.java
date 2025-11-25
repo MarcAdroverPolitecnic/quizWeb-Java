@@ -21,6 +21,7 @@ public class UserDao {
         }
     }
 
+    //Mètode de inici de sessió
     public boolean login(String username, String password) {
         String sql = "SELECT * FROM user WHERE username = ? AND password = ?";
 
@@ -37,6 +38,7 @@ public class UserDao {
         }
     }
 
+    //Mètode de registre
     public boolean register(User user) {
         String sql = "INSERT INTO user (username, password) VALUES (?, ?)";
         try (PreparedStatement pst = connection.prepareStatement(sql)) {
@@ -53,6 +55,7 @@ public class UserDao {
         }
     }
 
+    //Mètode per obtenir un usuari donada una id
     public User getUserById(Long id) {
         try (PreparedStatement pst = connection.prepareStatement("SELECT * FROM user WHERE id = " + id)) {
             ResultSet result = pst.executeQuery();
@@ -72,6 +75,7 @@ public class UserDao {
         }
     }
 
+    //Mètode per obtenir l'id d'un usuari donat un username
     public Long getUserId(String username) {
         String sql = "SELECT id FROM user WHERE username = ?";
 

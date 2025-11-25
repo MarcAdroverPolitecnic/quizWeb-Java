@@ -1,6 +1,4 @@
-/* menu.css */
 
-/* Estilos generales */
 * {
     margin: 0;
     padding: 0;
@@ -19,14 +17,13 @@ body {
     color: #333;
 }
 
-/* Contenedor principal */
 .container {
     max-width: 900px;
     width: 100%;
     margin: 0 auto;
 }
 
-/* Encabezado */
+
 .header {
     text-align: center;
     margin-bottom: 40px;
@@ -44,7 +41,7 @@ body {
     font-size: 1.1rem;
 }
 
-/* Botón de inicio */
+
 .start-section {
     text-align: center;
     margin-bottom: 50px;
@@ -74,7 +71,6 @@ body {
     transform: translateY(-1px);
 }
 
-/* Tabla de puntuaciones */
 .scores-section {
     background: white;
     border-radius: 15px;
@@ -139,7 +135,6 @@ td:first-child {
     color: #2d3748;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     body {
         padding: 15px;

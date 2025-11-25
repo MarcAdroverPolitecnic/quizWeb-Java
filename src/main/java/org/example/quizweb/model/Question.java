@@ -20,6 +20,7 @@ public class Question {
         this.incorrectAnswers = incorrectAnswers;
     }
 
+    //Mètode que retorna una llista amb totes les respostes mesclades
     public List<String> getAllAnswers() {
         List<String> allAnswers = new ArrayList<>();
         allAnswers.add(correctAnswer);
