@@ -32,7 +32,8 @@ public class LogInServlet extends HttpServlet {
         System.out.println(password);
 
         if (!service.login(username, password)) {
-            resp.sendRedirect(req.getContextPath() + "/login");
+            req.setAttribute("error", "Incorrect username or password");
+            req.getRequestDispatcher("/login.jsp").forward(req, resp);
             return;
         }
 

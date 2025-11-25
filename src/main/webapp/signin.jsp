@@ -20,8 +20,11 @@
         <input type="password" name="password" placeholder="Password" required>
     </div>
 
-    <button class="btn" type="submit">sign in</button>
+    <button class="btn" type="submit">submit</button>
 </form>
+    <c:if test="${not empty(error)}">
+        <p>${error}</p>
+    </c:if>
 </div>
 
 </body>

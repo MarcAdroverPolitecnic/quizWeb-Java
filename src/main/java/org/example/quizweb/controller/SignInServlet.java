@@ -30,9 +30,11 @@ public class SignInServlet extends HttpServlet {
 
         User newUser = new User(username, hashedPassword);
 
-        if (!service.register(newUser)) {
-            req.getSession().setAttribute("error", "Error al registrar. El usuario o email ya existe.");
-            resp.sendRedirect(req.getContextPath() + "/signin");
+        if (service.getUserId(username) == null) {
+            service.register(newUser);
+        } else {
+            req.setAttribute("error", "Already exists");
+            req.getRequestDispatcher("/signin.jsp").forward(req, resp);
             return;
         }
 

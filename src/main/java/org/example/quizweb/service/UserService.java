@@ -15,4 +15,8 @@ public class UserService {
     public boolean register(User user) throws ServletException, IOException {
         return userDao.register(user);
     }
+
+    public Long getUserId(String username) {
+        return userDao.getUserId(username);
+    }
 }
